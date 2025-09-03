@@ -1,0 +1,988 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Struktur Desa</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="website icon" type="png" href="assets/icon/icon.png">
+</head>
+  <header>    <div class="header-inner">
+      <img src="assets/icon/icon.png" alt="Logo Desa" class="logo-desa">
+      <div class="header-text">
+        <div id="tanggal-waktu" class="tanggal-waktu"></div>
+        <h1 id="desarantaubertuah">Desa Rantau Bertuah</h1>
+        <p>Kecamatan Minas, Kabupaten Siak, Provinsi Riau</p>
+      </div>
+    </div>
+  </header>
+<body>
+<main>
+    <nav class="fade-in">
+    <a href="struktur.html" class="button-nav">Struktur Desa</a>
+    <div class="nav-item-wrapper">
+      <a href="#" class="button-nav with-arrow">Pariwisata Desa <span class="dropdown-arrow">▼</span></a>
+      <ul class="dropdown-custom">
+        <li><a href="budaya.html" class="active">Budaya</a></li>
+        <li><a href="wisata.html" class="active">Wisata</a></li>
+      </ul>
+    </div>
+    <div class="nav-item-wrapper">
+          <a href="#" class="button-nav with-arrow">Profil Desa <span class="dropdown-arrow">▼</a>
+          <ul class="dropdown-custom">
+            <li><a href="index.html#profil" class="button-nav">Profil</a></li>
+            <li><a href="index.html#visi&misi" class="button-nav">Visi & Misi</a></li>
+            <li><a href="index.html#geografi" class="button-nav">Geografis</a></li>
+            <li><a href="profil.html" class="button-nav-selengkapnya">Tentang Kami</a></li>
+          </ul>
+        </div>
+    <a href="index.html#kontak" class="button-nav">Kontak</a>
+    <div class="nav-item-wrapper">
+      <a href="#" class="button-nav with-arrow">Informasi Desa <span class="dropdown-arrow">▼</a>
+      <ul class="dropdown-custom">
+        <li><a href="apbdesa.html" class="active">APB Desa</a></li>      
+      </ul>
+    </div>
+    <a href="galeri.html" class="button-nav">Galeri</a>    
+  </nav>
+
+<section class="breadcrumb fade-in">
+  <a href="index.html"><i class="fa fa-home fade-in"></i></a> / Struktur Desa
+</section>
+
+<div class="struktur-wrapper fade-in">
+  <div class="sidebar-struktur fade-in">
+    <h3>Struktur Organisasi</h3>
+    <ul>
+      <li onclick="tampilkanData('struktur')">Struktur Organisasi</li>
+      <li onclick="tampilkanData('kepala-desa')">Kepala Desa</li>
+      <li onclick="tampilkanData('bpd')">Badan Permusyawaratan Desa</li>
+      <li onclick="tampilkanData('sekretaris')">Sekretaris Desa</li>
+      <li onclick="tampilkanData('kaur_umum')">Kaur Umum dan Perencanaan</li>
+      <li onclick="tampilkanData('staff_kaur_umum')">Staff Kaur Umum dan Perencanaan</li>
+      <li onclick="tampilkanData('kaur_keuangan')">Kaur Keuangan / Bendahara</li>
+      <li onclick="tampilkanData('juru1')">Juru Tulis I</li>
+      <li onclick="tampilkanData('juru2')">Juru Tulis II</li>
+      <li onclick="tampilkanData('juru3')">Juru Tulis III</li>
+      <li onclick="tampilkanData('kadus_suka')">Kadus Suka Maju</li>
+      <li onclick="tampilkanData('kadus_cinta')">Kadus Cinta Damai</li>
+      <li onclick="tampilkanData('staff1')">Staff Juru Tulis I</li>
+      <li onclick="tampilkanData('staff2')">Staff Juru Tulis II</li>
+      <li onclick="tampilkanData('staff3')">Staff Juru Tulis III</li>
+      <li onclick="tampilkanData('staff4')">Staff Juru Tulis IV</li>
+      <li onclick="tampilkanData('penjaga_kantor1')">Penjaga Kantor I</li>
+      <li onclick="tampilkanData('penjaga_kantor2')">Penjaga Kantor II</li>
+      <li onclick="tampilkanData('kebersihan1')">Petugas Kebersihan I</li>
+      <li onclick="tampilkanData('kebersihan2')">Petugas Kebersihan II</li>
+      <li onclick="tampilkanData('perpus1')">Penjaga Perpustakaan I</li>
+      <li onclick="tampilkanData('perpus2')">Penjaga Perpustakaan II</li>
+    </ul>
+  </div>
+
+  <div id="struktur" class="konten-struktur-organisasi aktif"> 
+      <h2>Struktur Organisasi</h2>
+      <br>
+      <br>
+      <img src="assets/struktur/struktur-organisasi-desa.png" alt="Struktur Organisasi">
+  </div>
+    
+  <div id="kepala-desa" class="konten-item fade-in">
+    <br>
+    <img src="assets/struktur/kepala-desa.jpg" alt="Kepala Desa">
+    <h2>Kepala Desa</h2>
+    <table class="data-pejabat fade-in">
+      <tr>
+        <td><strong>Jabatan</strong></td>
+        <td>: KEPALA DESA</td>
+      </tr>
+      <tr>
+        <td><strong>Nama Pejabat</strong></td>
+        <td>: H. M. MUSLIM SARAGIH, SP</td>
+      </tr>
+      <tr>
+        <td><strong>Nama Lengkap</strong></td>
+        <td>: H. MUHAMMAD MUSLIM SARAGIH, SP</td>
+      </tr>
+      <tr>
+        <td><strong>Tempat/Tgl Lahir</strong></td>
+        <td>: D. Sinumba, 17 April 1970</td>
+      </tr>
+      <tr>
+        <td><strong>Alamat</strong></td>
+        <td>: Jl. Durian RT002 RK002 Rantau Bertuah</td>
+      </tr>
+      <tr>
+        <td><strong>Tingkat Pendidikan</strong></td>
+        <td>: S1</td>
+      </tr>
+    </table>
+     
+    <br>
+
+    <div class="deskripsi-pejabat fade-in">
+      <p>
+        Kepala desa adalah jabatan kepemimpinan pemerintahan di tingkat desa atau kelurahan.
+        Sebagai kepala desa, seseorang memiliki tanggung jawab utama untuk mengelola pemerintahan desa,
+        melaksanakan kebijakan pemerintah, serta memajukan kesejahteraan dan pembangunan di wilayah desa yang dipimpinnya.
+      </p>
+      <p><strong>Tugas-tugas kepala desa meliputi berbagai hal, antara lain:</strong></p>
+      <ol>
+        <li><strong>Administrasi Desa:</strong> Mengelola administrasi desa, termasuk pendataan penduduk, kepemilikan lahan, dan administrasi keuangan desa.</li>
+        <li><strong>Pembangunan Desa:</strong> Berperan dalam perencanaan dan pelaksanaan pembangunan infrastruktur, pengembangan sektor pertanian, pendidikan, kesehatan, dan lainnya.</li>
+        <li><strong>Penyelenggaraan Pelayanan Masyarakat:</strong> Menyelenggarakan layanan masyarakat seperti administrasi kependudukan, perizinan, dan pelayanan sosial.</li>
+        <li><strong>Pengawasan dan Penegakan Hukum:</strong> Mengawasi kegiatan di desa serta menjaga keamanan dan ketertiban bersama aparat terkait.</li>
+        <li><strong>Penghubung Pemerintah dan Masyarakat:</strong> Mengkomunikasikan kebijakan pemerintah dan menyampaikan aspirasi masyarakat.</li>
+      </ol>
+      <p>
+        Pemilihan kepala desa biasanya dilakukan melalui pemilihan umum di mana warga desa memiliki hak suara.
+        Masa jabatan kepala desa umumnya enam tahun sebelum dilakukan pemilihan kembali.
+        Dalam melaksanakan tugasnya, kepala desa bekerja sama dengan perangkat desa seperti sekretaris desa, kepala dusun, dan staf administrasi.
+      </p>
+    </div>
+  </div>
+
+  <div id="bpd" class="konten-item fade-in">
+    <h2>BADAN PERMUSYAWARATAN DESA</h2>
+
+    <br>
+
+    <div class="deskripsi-pejabat">
+        <p>
+            Badan Permusyawaratan Desa (BPD) adalah lembaga yang berperan penting dalam sistem pemerintahan desa di Indonesia. 
+            BPD merupakan wadah bagi partisipasi masyarakat dalam pengambilan keputusan di tingkat desa. 
+            Lembaga ini memiliki peran sebagai lembaga legislatif di tingkat desa.
+        </p>
+
+        <p>Berikut adalah beberapa poin penting yang menjelaskan tentang Badan Permusyawaratan Desa (BPD):</p>
+        <ol>
+            <li><strong>Fungsi:</strong> Fungsi utama BPD adalah sebagai lembaga perwakilan masyarakat desa yang memiliki kewenangan dalam proses pengambilan keputusan. BPD berperan dalam menyusun, mempesahkan, dan mengawasi pelaksanaan peraturan desa. Lembaga ini juga berperan dalam mengawasi dan mengontrol pelaksanaan kebijakan pemerintah desa.</li>
+            <li><strong>Anggota:</strong> BPD terdiri dari anggota yang dipilih langsung oleh masyarakat desa dalam musyawarah desa. Jumlah anggota BPD dapat bervariasi tergantung pada ukuran dan kebutuhan desa, tetapi umumnya terdiri dari beberapa orang yang mewakili berbagai wilayah atau dusun di desa tersebut.</li>
+            <li><strong>Masa Jabatan:</strong> Anggota BPD memiliki masa jabatan yang ditetapkan dalam peraturan desa. Umumnya, masa jabatan BPD berlangsung selama enam tahun, sesuai dengan masa jabatan kepala desa. Setelah masa jabatan berakhir, dilakukan pemilihan ulang untuk membentuk BPD yang baru.</li>
+            <li><strong>Kewenangan:</strong> BPD memiliki kewenangan dalam proses pembentukan peraturan desa atau peraturan kepala desa. Mereka memiliki hak untuk memberikan persetujuan atau usulan terhadap rancangan peraturan desa yang diajukan oleh kepala desa. Selain itu, BPD juga memiliki kewenangan untuk mengawasi penggunaan anggaran desa dan pelaksanaan program pembangunan desa.</li>
+            <li><strong>Musyawarah Desa:</strong> Musyawarah desa merupakan forum penting dalam sistem pemerintahan desa di Indonesia. BPD memiliki peran dalam mengorganisir dan memfasilitasi musyawarah desa. Dalam musyawarah desa, berbagai kebijakan dan keputusan penting dibahas dan diputuskan secara kolektif oleh masyarakat desa.</li>
+            <li><strong>Hubungan dengan Kepala Desa:</strong> BPD memiliki hubungan kerja yang erat dengan kepala desa. Kepala desa wajib bekerja sama dengan BPD dan meminta persetujuan atau masukan mereka dalam proses pengambilan keputusan. Keputusan kepala desa yang signifikan juga harus disampaikan kepada BPD untuk mendapatkan persetujuan atau tanggapan.</li>
+        </ol>
+
+        <p>
+            Peran BPD dalam sistem pemerintahan desa adalah untuk memastikan partisipasi masyarakat dalam proses pengambilan keputusan yang berdampak langsung pada pembangunan dan kesejahteraan desa. 
+            Melalui BPD, aspirasi dan kepentingan masyarakat desa dapat didengar dan diwakili dalam kebijakan dan program yang dilaksanakan di tingkat desa.
+        </p>
+    </div>
+  </div>
+
+  <div id="sekretaris" class="konten-item fade-in">
+    <img src="assets/no-img.png" alt="Sekretaris Desa">
+    <h2>Sekretaris Desa</h2>
+    <table class="data-pejabat fade-in">
+      <tr>
+        <td><strong>Jabatan</strong></td>
+        <td>: SEKRETARIS DESA</td>
+      </tr>
+      <tr>
+        <td><strong>Nama Pejabat</strong></td>
+        <td>: LILI PERTIWI, S.Sos</td>
+      </tr>
+      <tr>
+        <td><strong>Nama Lengkap</strong></td>
+        <td>: LILI PERTIWI, S.Sos</td>
+      </tr>
+      <tr>
+        <td><strong>Tempat/Tgl Lahir</strong></td>
+        <td>: Minas, 24 Januari 1992</td>
+      </tr>
+      <tr>
+        <td><strong>Alamat</strong></td>
+        <td>: Jl. Sukun RT002 RK003 Rantau Bertuah</td>
+      </tr>
+      <tr>
+        <td><strong>Tingkat Pendidikan</strong></td>
+        <td>: S1</td>
+      </tr>
+    </table>
+  </div>
+
+  <div id="kaur_umum" class="konten-item fade-in">
+    <img src="assets/struktur/kaur-umum.jpg" alt="Kaur Umum">
+    <h2>Kaur Umum dan Perencanaan</h2>
+    <table class="data-pejabat fade-in">
+      <tr>
+        <td><strong>Jabatan</strong></td>
+        <td>: KAUR UMUM DAN PERENCANAAN</td>
+      </tr>
+      <tr>
+        <td><strong>Nama Pejabat</strong></td>
+        <td>: SRI MAYANG SARI, S.AP</td>
+      </tr>
+      <tr>
+        <td><strong>Nama Lengkap</strong></td>
+        <td>: SRI MAYANG SARI, S.AP</td>
+      </tr>
+      <tr>
+        <td><strong>Tempat/Tgl Lahir</strong></td>
+        <td>: Minas, 12 Juli 1995</td>
+      </tr>
+      <tr>
+        <td><strong>Alamat</strong></td>
+        <td>: Jl. Sukun RT001 RK003 Rantau Bertuah</td>
+      </tr>
+      <tr>
+        <td><strong>Tingkat Pendidikan</strong></td>
+        <td>: S1</td>
+      </tr>
+    </table>
+    </div>
+  
+    <div id="staff_kaur_umum" class="konten-item fade-in">
+    <img src="assets/struktur/staff-umum.jpg" alt="Kaur Umum">
+    <h2> Staff Kaur Umum</h2>
+    <table class="data-pejabat fade-in">
+      <tr>
+        <td><strong>Jabatan</strong></td>
+        <td>: STAFF KAUR UMUM</td>
+      </tr>
+      <tr>
+        <td><strong>Nama Pejabat</strong></td>
+        <td>: YENTI LESMA, S.Pd</td>
+      </tr>
+      <tr>
+        <td><strong>Nama Lengkap</strong></td>
+        <td>: YENTI LESMA, S.Pd</td>
+      </tr>
+      <tr>
+        <td><strong>Tempat/Tgl Lahir</strong></td>
+        <td>: Bantaian, 27 September 1992</td>
+      </tr>
+      <tr>
+        <td><strong>Alamat</strong></td>
+        <td>: Jl. Sukun RT001 RK003 Rantau Bertuah</td>
+      </tr>
+      <tr>
+        <td><strong>Tingkat Pendidikan</strong></td>
+        <td>: S1</td>
+      </tr>
+    </table>
+    </div>
+
+  <div id="kaur_keuangan" class="konten-item fade-in">
+    <img src="assets//struktur/bendahara.jpg" alt="Kaur Keuangan / Bendahara">
+    <h2>Kaur Keuangan / Bendahara</h2>
+    <table class="data-pejabat fade-in">
+      <tr>
+        <td><strong>Jabatan</strong></td>
+        <td>: KAUR KEUANGAN/BENDAHARA</td>
+      </tr>
+      <tr>
+        <td><strong>Nama Pejabat</strong></td>
+        <td>: RETNO IRAWAN, SP</td>
+      </tr>
+      <tr>
+        <td><strong>Nama Lengkap</strong></td>
+        <td>: RETNO IRAWAN, SP</td>
+      </tr>
+      <tr>
+        <td><strong>Tempat/Tgl Lahir</strong></td>
+        <td>: Minas, 15 Maret 1997</td>
+      </tr>
+      <tr>
+        <td><strong>Alamat</strong></td>
+        <td>:  Jl. Sukun RT001 RK003 Rantau Bertuah</td>
+      </tr>
+      <tr>
+        <td><strong>Tingkat Pendidikan</strong></td>
+        <td>: S1</td>
+      </tr>
+    </table>
+  </div>
+
+  <div id="juru1" class="konten-item fade-in">
+    <img src="assets/struktur/juru-tulis1.jpg" alt="Kadus Suka Maju">
+    <h2>Juru Tulis I</h2>
+    <table class="data-pejabat fade-in">
+      <tr>
+        <td><strong>Jabatan</strong></td>
+        <td>: JURU TULIS I</td>
+      </tr>
+      <tr>
+        <td><strong>Nama Pejabat</strong></td>
+        <td>: EKA NURSANI, S.Sos</td>
+      </tr>
+      <tr>
+        <td><strong>Nama Lengkap</strong></td>
+        <td>: EKA NURSANI, S.Sos</td>
+      </tr>
+      <tr>
+        <td><strong>Tempat/Tgl Lahir</strong></td>
+        <td>: Minas, 19 Maret 1985</td>
+      </tr>
+      <tr>
+        <td><strong>Alamat</strong></td>
+        <td>: Jl. Durian RT002 RK002 Rantau Bertuah</td>
+      </tr>
+      <tr>
+        <td><strong>Tingkat Pendidikan</strong></td>
+        <td>: S1</td>
+      </tr>
+    </table>
+
+    <br>
+
+    <div class="deskripsi-pejabat fade-in">
+      <p>
+        Juru tulis kampung adalah sebutan yang umumnya digunakan di Indonesia untuk mengacu pada 
+        seorang pekerja atau staf administratif yang bertugas di tingkat kampung atau desa. Juru
+        tulis kampung sering kali bekerja di kantor kampung atau pusat pemerintahan setempat. 
+        Peran dan tanggung jawab juru tulis kampung dapat bervariasi tergantung pada kebutuhan 
+        dan tugas yang diberikan oleh pemerintah desa atau kampung. 
+      </p>
+      <p><strong>Berikut adalah beberapa tugas umum yang dapat dilakukan oleh seorang juru tulis kampung:</strong></p>
+      <ol>
+        <li><strong>Administrasi dan Perekaman Data:</strong> Juru tulis kampung bertanggung jawab dalam
+            menjalankan tugas administratif di tingkat kampung. Mereka dapat menyimpan dan mengelola 
+            dokumen-dokumen administratif seperti surat-surat, keputusan kampung, laporan-laporan, dan 
+            data penduduk. Mereka juga dapat mencatat dan memperbarui data kependudukan serta melakukan
+            pencatatan dan perekaman terkait kegiatan dan peristiwa di kampung.</li>
+        <li><strong>Pelayanan Publik:</strong> Juru tulis kampung dapat memberikan pelayanan publik kepada
+            masyarakat setempat. Mereka menerima dan menangani permintaan, pengaduan, dan pertanyaan dari 
+            masyarakat terkait kegiatan kampung atau kebutuhan pelayanan dasar seperti surat keterangan, 
+            pengurusan izin, atau informasi tentang program dan kegiatan kampung.</li>
+        <li><strong>Koordinasi Kegiatan:</strong> Juru tulis kampung dapat berperan dalam koordinasi kegiatan
+            dan acara di kampung. Mereka dapat membantu mengorganisir rapat-rapat kampung, mengatur jadwal 
+            kegiatan, menyusun agenda, dan memastikan kelancaran pelaksanaan kegiatan atau acara yang diselenggarakan
+            oleh kampung.</li>
+        <li><strong>Pemberdayaan Masyarakat</strong> Juru tulis kampung dapat terlibat dalam program-program 
+            pemberdayaan masyarakat di kampung. Mereka dapat membantu dalam menyelenggarakan kegiatan pelatihan,
+            penyuluhan, atau pertemuan masyarakat yang bertujuan untuk meningkatkan pengetahuan dan keterampilan
+            masyarakat.</li>
+        <li><strong>Pendampingan Kepala Kampung:</strong> Juru tulis kampung dapat mendampingi kepala kampung 
+            dalam menjalankan tugas-tugasnya. Mereka dapat membantu kepala kampung dalam menyusun keputusan kampung,
+            mengorganisir pertemuan, menyusun laporan-laporan, dan memberikan masukan atau saran dalam pengambilan
+            keputusan di tingkat kampung.</li>
+      </ol>
+      <p>
+            Peran juru tulis kampung sangat penting dalam menjaga kelancaran administrasi dan pelayanan publik di tingkat
+            kampung atau desa. Mereka membantu dalam mengelola data, memberikan pelayanan kepada masyarakat, dan mendukung
+            pengambilan keputusan oleh kepala kampung. Dengan adanya juru tulis kampung, diharapkan pelayanan kepada 
+            masyarakat dapat lebih terorganisir dan efisien di tingkat kampung atau desa.
+      </p>
+    </div>
+  </div>
+
+  <div id="juru2" class="konten-item fade-in">
+    <img src="assets/struktur/juru-tulis2.jpg" alt="Kadus Suka Maju">
+    <h2>Juru Tulis II</h2>
+    <table class="data-pejabat fade-in">
+      <tr>
+        <td><strong>Jabatan</strong></td>
+        <td>: JURU TULIS II</td>
+      </tr>
+      <tr>
+        <td><strong>Nama Pejabat</strong></td>
+        <td>: SUMIATI</td>
+      </tr>
+      <tr>
+        <td><strong>Nama Lengkap</strong></td>
+        <td>: SUMIATI</td>
+      </tr>
+      <tr>
+        <td><strong>Tempat/Tgl Lahir</strong></td>
+        <td>: Duri, 17 November 1978</td>
+      </tr>
+      <tr>
+        <td><strong>Alamat</strong></td>
+        <td>: Jl. Cempedak RT002 RK004 Rantau Bertuah</td>
+      </tr>
+      <tr>
+        <td><strong>Tingkat Pendidikan</strong></td>
+        <td>: SMA</td>
+      </tr>
+    </table>
+
+    <br>
+
+    <div class="deskripsi-pejabat fade-in">
+      <p>
+        Juru tulis kampung adalah sebutan yang umumnya digunakan di Indonesia untuk mengacu pada 
+        seorang pekerja atau staf administratif yang bertugas di tingkat kampung atau desa. Juru
+        tulis kampung sering kali bekerja di kantor kampung atau pusat pemerintahan setempat. 
+        Peran dan tanggung jawab juru tulis kampung dapat bervariasi tergantung pada kebutuhan 
+        dan tugas yang diberikan oleh pemerintah desa atau kampung. 
+      </p>
+      <p><strong>Berikut adalah beberapa tugas umum yang dapat dilakukan oleh seorang juru tulis kampung:</strong></p>
+      <ol>
+        <li><strong>Administrasi dan Perekaman Data:</strong> Juru tulis kampung bertanggung jawab dalam
+            menjalankan tugas administratif di tingkat kampung. Mereka dapat menyimpan dan mengelola 
+            dokumen-dokumen administratif seperti surat-surat, keputusan kampung, laporan-laporan, dan 
+            data penduduk. Mereka juga dapat mencatat dan memperbarui data kependudukan serta melakukan
+            pencatatan dan perekaman terkait kegiatan dan peristiwa di kampung.</li>
+        <li><strong>Pelayanan Publik:</strong> Juru tulis kampung dapat memberikan pelayanan publik kepada
+            masyarakat setempat. Mereka menerima dan menangani permintaan, pengaduan, dan pertanyaan dari 
+            masyarakat terkait kegiatan kampung atau kebutuhan pelayanan dasar seperti surat keterangan, 
+            pengurusan izin, atau informasi tentang program dan kegiatan kampung.</li>
+        <li><strong>Koordinasi Kegiatan:</strong> Juru tulis kampung dapat berperan dalam koordinasi kegiatan
+            dan acara di kampung. Mereka dapat membantu mengorganisir rapat-rapat kampung, mengatur jadwal 
+            kegiatan, menyusun agenda, dan memastikan kelancaran pelaksanaan kegiatan atau acara yang diselenggarakan
+            oleh kampung.</li>
+        <li><strong>Pemberdayaan Masyarakat</strong> Juru tulis kampung dapat terlibat dalam program-program 
+            pemberdayaan masyarakat di kampung. Mereka dapat membantu dalam menyelenggarakan kegiatan pelatihan,
+            penyuluhan, atau pertemuan masyarakat yang bertujuan untuk meningkatkan pengetahuan dan keterampilan
+            masyarakat.</li>
+        <li><strong>Pendampingan Kepala Kampung:</strong> Juru tulis kampung dapat mendampingi kepala kampung 
+            dalam menjalankan tugas-tugasnya. Mereka dapat membantu kepala kampung dalam menyusun keputusan kampung,
+            mengorganisir pertemuan, menyusun laporan-laporan, dan memberikan masukan atau saran dalam pengambilan
+            keputusan di tingkat kampung.</li>
+      </ol>
+      <p>
+            Peran juru tulis kampung sangat penting dalam menjaga kelancaran administrasi dan pelayanan publik di tingkat
+            kampung atau desa. Mereka membantu dalam mengelola data, memberikan pelayanan kepada masyarakat, dan mendukung
+            pengambilan keputusan oleh kepala kampung. Dengan adanya juru tulis kampung, diharapkan pelayanan kepada 
+            masyarakat dapat lebih terorganisir dan efisien di tingkat kampung atau desa.
+      </p>
+    </div>
+  </div>
+
+  <div id="juru3" class="konten-item fade-in">
+    <img src="assets/struktur/juru-tulis3.jpg" alt="Kadus Suka Maju">
+    <h2>Juru Tulis III</h2>
+    <table class="data-pejabat fade-in">
+      <tr>
+        <td><strong>Jabatan</strong></td>
+        <td>: JURU TULIS III</td>
+      </tr>
+      <tr>
+        <td><strong>Nama Pejabat</strong></td>
+        <td>: LIZA</td>
+      </tr>
+      <tr>
+        <td><strong>Nama Lengkap</strong></td>
+        <td>: LIZA</td>
+      </tr>
+      <tr>
+        <td><strong>Tempat/Tgl Lahir</strong></td>
+        <td>: Duri, 20 Juli 1985</td>
+      </tr>
+      <tr>
+        <td><strong>Alamat</strong></td>
+        <td>: Jl. Saos RT002 RK001 Rantau Bertuah</td>
+      </tr>
+      <tr>
+        <td><strong>Tingkat Pendidikan</strong></td>
+        <td>: SMA</td>
+      </tr>
+    </table>
+
+    <br>
+
+    <div class="deskripsi-pejabat fade-in">
+      <p>
+        Juru tulis kampung adalah sebutan yang umumnya digunakan di Indonesia untuk mengacu pada 
+        seorang pekerja atau staf administratif yang bertugas di tingkat kampung atau desa. Juru
+        tulis kampung sering kali bekerja di kantor kampung atau pusat pemerintahan setempat. 
+        Peran dan tanggung jawab juru tulis kampung dapat bervariasi tergantung pada kebutuhan 
+        dan tugas yang diberikan oleh pemerintah desa atau kampung. 
+      </p>
+      <p><strong>Berikut adalah beberapa tugas umum yang dapat dilakukan oleh seorang juru tulis kampung:</strong></p>
+      <ol>
+        <li><strong>Administrasi dan Perekaman Data:</strong> Juru tulis kampung bertanggung jawab dalam
+            menjalankan tugas administratif di tingkat kampung. Mereka dapat menyimpan dan mengelola 
+            dokumen-dokumen administratif seperti surat-surat, keputusan kampung, laporan-laporan, dan 
+            data penduduk. Mereka juga dapat mencatat dan memperbarui data kependudukan serta melakukan
+            pencatatan dan perekaman terkait kegiatan dan peristiwa di kampung.</li>
+        <li><strong>Pelayanan Publik:</strong> Juru tulis kampung dapat memberikan pelayanan publik kepada
+            masyarakat setempat. Mereka menerima dan menangani permintaan, pengaduan, dan pertanyaan dari 
+            masyarakat terkait kegiatan kampung atau kebutuhan pelayanan dasar seperti surat keterangan, 
+            pengurusan izin, atau informasi tentang program dan kegiatan kampung.</li>
+        <li><strong>Koordinasi Kegiatan:</strong> Juru tulis kampung dapat berperan dalam koordinasi kegiatan
+            dan acara di kampung. Mereka dapat membantu mengorganisir rapat-rapat kampung, mengatur jadwal 
+            kegiatan, menyusun agenda, dan memastikan kelancaran pelaksanaan kegiatan atau acara yang diselenggarakan
+            oleh kampung.</li>
+        <li><strong>Pemberdayaan Masyarakat</strong> Juru tulis kampung dapat terlibat dalam program-program 
+            pemberdayaan masyarakat di kampung. Mereka dapat membantu dalam menyelenggarakan kegiatan pelatihan,
+            penyuluhan, atau pertemuan masyarakat yang bertujuan untuk meningkatkan pengetahuan dan keterampilan
+            masyarakat.</li>
+        <li><strong>Pendampingan Kepala Kampung:</strong> Juru tulis kampung dapat mendampingi kepala kampung 
+            dalam menjalankan tugas-tugasnya. Mereka dapat membantu kepala kampung dalam menyusun keputusan kampung,
+            mengorganisir pertemuan, menyusun laporan-laporan, dan memberikan masukan atau saran dalam pengambilan
+            keputusan di tingkat kampung.</li>
+      </ol>
+      <p>
+            Peran juru tulis kampung sangat penting dalam menjaga kelancaran administrasi dan pelayanan publik di tingkat
+            kampung atau desa. Mereka membantu dalam mengelola data, memberikan pelayanan kepada masyarakat, dan mendukung
+            pengambilan keputusan oleh kepala kampung. Dengan adanya juru tulis kampung, diharapkan pelayanan kepada 
+            masyarakat dapat lebih terorganisir dan efisien di tingkat kampung atau desa.
+      </p>
+    </div>
+  </div>
+
+  <div id="kadus_suka" class="konten-item fade-in">
+    <img src="assets/struktur/kadus-sukamaju.jpg" alt="Kadus Suka Maju">
+    <h2>Kadus Suka Maju</h2>
+    <table class="data-pejabat fade-in">
+      <tr>
+        <td><strong>Jabatan</strong></td>
+        <td>: KADUS SUKA MAJU</td>
+      </tr>
+      <tr>
+        <td><strong>Nama Pejabat</strong></td>
+        <td>: SRI WATI, S.Pd</td>
+      </tr>
+      <tr>
+        <td><strong>Nama Lengkap</strong></td>
+        <td>: SRI WATI, S.Pd</td>
+      </tr>
+      <tr>
+        <td><strong>Tempat/Tgl Lahir</strong></td>
+        <td>: Minas, 09 Agustus 1990</td>
+      </tr>
+      <tr>
+        <td><strong>Alamat</strong></td>
+        <td>: Jl. Durian RT002 RK002 Rantau Bertuah</td>
+      </tr>
+      <tr>
+        <td><strong>Tingkat Pendidikan</strong></td>
+        <td>: S1</td>
+      </tr>
+    </table>
+  </div>
+
+  <div id="kadus_cinta" class="konten-item fade-in">
+    <img src="assets/struktur/kadus-cinta-damai.jpg" alt="Kadus Cinta Damai">
+    <h2>Kadus Cinta Damai</h2>
+    <table class="data-pejabat fade-in">
+      <tr>
+        <td><strong>Jabatan</strong></td>
+        <td>: KADUS CINTA DAMAI</td>
+      </tr>
+      <tr>
+        <td><strong>Nama Pejabat</strong></td>
+        <td>: ASTONO HENDRI SIREGAR</td>
+      </tr>
+      <tr>
+        <td><strong>Nama Lengkap</strong></td>
+        <td>: ASTONO HENDRI SIREGAR</td>
+      </tr>
+       <tr>
+        <td><strong>NIP</strong></td>
+        <td>: 1208180101850002</td>
+      </tr>
+      <tr>
+        <td><strong>Tempat/Tgl Lahir</strong></td>
+        <td>: BUMI REJO, 1 JANUARI 1985</td>
+      </tr>
+      <tr>
+        <td><strong>Tingkat Pendidikan</strong></td>
+        <td>: STM</td>
+      </tr>
+    </table>
+  </div>
+
+  <div id="staff1" class="konten-item fade-in">
+    <img src="assets/struktur/staff-juru1.jpg" alt="S">
+    <h2>Staff Juru Tulis I</h2>
+    <table class="data-pejabat fade-in">
+      <tr>
+        <td><strong>Jabatan</strong></td>
+        <td>: STAFF Juru Tulis I</td>
+      </tr>
+      <tr>
+        <td><strong>Nama Pejabat</strong></td>
+        <td>: RISKA ADE MUSYAROH, S.Pd</td>
+      </tr>
+      <tr>
+        <td><strong>Nama Lengkap</strong></td>
+        <td>: RISKA ADE MUSYAROH, S.Pd</td>
+      </tr>
+      <tr>
+        <td><strong>Tempat/Tgl Lahir</strong></td>
+        <td>: Sungai Pagar, 29 April 1992</td>
+      </tr>
+      <tr>
+        <td><strong>Alamat</strong></td>
+        <td>: Jl. Saos RT002 RK001 Rantau Bertuah</td>
+      </tr>
+      <tr>
+        <td><strong>Tingkat Pendidikan</strong></td>
+        <td>: S1</td>
+      </tr>
+    </table>
+
+    <br>
+
+    <div class="deskripsi-pejabat fade-in">
+      <p>
+        Staff Juru Tulis kampung adalah individu yang bertanggung jawab dalam menjalankan tugas administratif di tingkat kampung atau desa. Mereka bekerja di kantor kampung atau pusat pemerintahan setempat dan mendukung kelancaran administrasi serta pelayanan publik kepada masyarakat.
+      </p>
+      <p><strong>Berikut adalah beberapa tugas umum yang dapat dilakukan oleh Staff Juru Tulis kampung:</strong></p>
+      <ol>
+        <li><strong>Penerimaan dan Pelayanan Publik:</strong> Staff Juru Tulis kampung menerima dan memberikan pelayanan kepada masyarakat yang datang ke kantor kampung. Mereka dapat membantu dalam memberikan informasi, menerima permintaan, pengaduan, atau pertanyaan masyarakat terkait kegiatan kampung atau kebutuhan pelayanan dasar seperti surat keterangan, pengurusan izin, atau informasi tentang program dan kegiatan kampung.</li>
+        <li><strong>Administrasi Dokumen:</strong> Staff Juru Tulis kampung bertanggung jawab dalam mengelola dan menjaga keberlanjutan dokumen-dokumen administratif di kantor kampung. Mereka dapat menyimpan, mengatur, dan mengelola surat-surat, keputusan kampung, laporan-laporan, data penduduk, dan dokumen-dokumen lain yang diperlukan untuk kelancaran administrasi kampung.</li>
+        <li><strong>Perekaman Data:</strong> StaffJuru Tulis kampung mencatat dan memperbarui data kependudukan serta melakukan pencatatan dan perekaman terkait kegiatan dan peristiwa di kampung. Mereka dapat melakukan tugas seperti pencatatan kelahiran, kematian, perpindahan penduduk, dan kejadian penting lainnya di kampung.</li>
+        <li><strong>Koordinasi Kegiatan:</strong> Staff Juru Tulis kampung dapat berperan dalam koordinasi kegiatan dan acara di kampung. Mereka dapat membantu mengorganisir rapat-rapat kampung, mengatur jadwal kegiatan, menyusun agenda, dan memastikan kelancaran pelaksanaan kegiatan atau acara yang diselenggarakan oleh kampung.</li>
+        <li><strong>Pendukung Kepala Kampung:</strong> Staff Juru Tulis kampung mendukung kepala kampung dalam menjalankan tugas-tugasnya. Mereka dapat membantu kepala kampung dalam menyusun keputusan kampung, mengorganisir pertemuan, menyusun laporan-laporan, serta memberikan masukan atau saran dalam pengambilan keputusan di tingkat kampung.</li>
+      </ol>
+      <p>Staff Juru Tulis kampung sangat penting dalam menjaga kelancaran administrasi dan pelayanan publik di tingkat kampung atau desa. Dengan melakukan tugas-tugas administratif, menyediakan pelayanan kepada masyarakat, dan mendukung kepala kampung, mereka berkontribusi dalam menjaga keteraturan dan efisiensi kantor kampung serta meningkatkan pelayanan kepada masyarakat.
+      </p>
+      </div>
+    </div>
+
+  <div id="staff2" class="konten-item fade-in">
+    <img src="assets/struktur/staff-juru2.jpg" alt="S">
+    <h2>Staff Juru Tulis II</h2>
+    <table class="data-pejabat fade-in">
+      <tr>
+        <td><strong>Jabatan</strong></td>
+        <td>: STAFF Juru Tulis II</td>
+      </tr>
+      <tr>
+        <td><strong>Nama Pejabat</strong></td>
+        <td>: SULASTRI</td>
+      </tr>
+      <tr>
+        <td><strong>Nama Lengkap</strong></td>
+        <td>: SULASTRI</td>
+      </tr>
+      <tr>
+        <td><strong>Tempat/Tgl Lahir</strong></td>
+        <td>: Sesilau Timur, 16 Desember 1992</td>
+      </tr>
+      <tr>
+        <td><strong>Alamat</strong></td>
+        <td>: Jl. Saos RT001 RK001 Rantau Bertuah</td>
+      </tr>
+      <tr>
+        <td><strong>Tingkat Pendidikan</strong></td>
+        <td>: SMA</td>
+      </tr>
+    </table>
+
+    <br>
+
+    <div class="deskripsi-pejabat fade-in">
+      <p>
+        Staff Juru Tulis kampung adalah individu yang bertanggung jawab dalam menjalankan tugas administratif di tingkat kampung atau desa. Mereka bekerja di kantor kampung atau pusat pemerintahan setempat dan mendukung kelancaran administrasi serta pelayanan publik kepada masyarakat.
+      </p>
+      <p><strong>Berikut adalah beberapa tugas umum yang dapat dilakukan oleh Staff Juru Tulis kampung:</strong></p>
+      <ol>
+        <li><strong>Penerimaan dan Pelayanan Publik:</strong> Staff Juru Tulis kampung menerima dan memberikan pelayanan kepada masyarakat yang datang ke kantor kampung. Mereka dapat membantu dalam memberikan informasi, menerima permintaan, pengaduan, atau pertanyaan masyarakat terkait kegiatan kampung atau kebutuhan pelayanan dasar seperti surat keterangan, pengurusan izin, atau informasi tentang program dan kegiatan kampung.</li>
+        <li><strong>Administrasi Dokumen:</strong> Staff Juru Tulis kampung bertanggung jawab dalam mengelola dan menjaga keberlanjutan dokumen-dokumen administratif di kantor kampung. Mereka dapat menyimpan, mengatur, dan mengelola surat-surat, keputusan kampung, laporan-laporan, data penduduk, dan dokumen-dokumen lain yang diperlukan untuk kelancaran administrasi kampung.</li>
+        <li><strong>Perekaman Data:</strong> StaffJuru Tulis kampung mencatat dan memperbarui data kependudukan serta melakukan pencatatan dan perekaman terkait kegiatan dan peristiwa di kampung. Mereka dapat melakukan tugas seperti pencatatan kelahiran, kematian, perpindahan penduduk, dan kejadian penting lainnya di kampung.</li>
+        <li><strong>Koordinasi Kegiatan:</strong> Staff Juru Tulis kampung dapat berperan dalam koordinasi kegiatan dan acara di kampung. Mereka dapat membantu mengorganisir rapat-rapat kampung, mengatur jadwal kegiatan, menyusun agenda, dan memastikan kelancaran pelaksanaan kegiatan atau acara yang diselenggarakan oleh kampung.</li>
+        <li><strong>Pendukung Kepala Kampung:</strong> Staff Juru Tulis kampung mendukung kepala kampung dalam menjalankan tugas-tugasnya. Mereka dapat membantu kepala kampung dalam menyusun keputusan kampung, mengorganisir pertemuan, menyusun laporan-laporan, serta memberikan masukan atau saran dalam pengambilan keputusan di tingkat kampung.</li>
+      </ol>
+      <p>Staff Juru Tulis kampung sangat penting dalam menjaga kelancaran administrasi dan pelayanan publik di tingkat kampung atau desa. Dengan melakukan tugas-tugas administratif, menyediakan pelayanan kepada masyarakat, dan mendukung kepala kampung, mereka berkontribusi dalam menjaga keteraturan dan efisiensi kantor kampung serta meningkatkan pelayanan kepada masyarakat.
+      </p>
+      </div>
+  </div>
+
+  <div id="staff3" class="konten-item fade-in">
+    <img src="assets/struktur/staff-juru3.jpg" alt="S">
+    <h2>Staff Juru Tulis III</h2>
+    <table class="data-pejabat fade-in">
+      <tr>
+        <td><strong>Jabatan</strong></td>
+        <td>: STAFF Juru Tulis III</td>
+      </tr>
+      <tr>
+        <td><strong>Nama Pejabat</strong></td>
+        <td>: WAHYUNI SAPUTRI</td>
+      </tr>
+      <tr>
+        <td><strong>Nama Lengkap</strong></td>
+        <td>: WAHYUNI SAPUTRI</td>
+      </tr>
+      <tr>
+        <td><strong>Tempat/Tgl Lahir</strong></td>
+        <td>: Rantau Bertuah, 06 Januari 2001</td>
+      </tr>
+      <tr>
+        <td><strong>Alamat</strong></td>
+        <td>: Jl. Saos RT003 RK001 Rantau Bertuah</td>
+      </tr>
+      <tr>
+        <td><strong>Tingkat Pendidikan</strong></td>
+        <td>: SMK</td>
+      </tr>
+    </table>
+
+    <br>
+
+    <div class="deskripsi-pejabat fade-in">
+      <p>
+        Staff Juru Tulis kampung adalah individu yang bertanggung jawab dalam menjalankan tugas administratif di tingkat kampung atau desa. Mereka bekerja di kantor kampung atau pusat pemerintahan setempat dan mendukung kelancaran administrasi serta pelayanan publik kepada masyarakat.
+      </p>
+      <p><strong>Berikut adalah beberapa tugas umum yang dapat dilakukan oleh Staff Juru Tulis kampung:</strong></p>
+      <ol>
+        <li><strong>Penerimaan dan Pelayanan Publik:</strong> Staff Juru Tulis kampung menerima dan memberikan pelayanan kepada masyarakat yang datang ke kantor kampung. Mereka dapat membantu dalam memberikan informasi, menerima permintaan, pengaduan, atau pertanyaan masyarakat terkait kegiatan kampung atau kebutuhan pelayanan dasar seperti surat keterangan, pengurusan izin, atau informasi tentang program dan kegiatan kampung.</li>
+        <li><strong>Administrasi Dokumen:</strong> Staff Juru Tulis kampung bertanggung jawab dalam mengelola dan menjaga keberlanjutan dokumen-dokumen administratif di kantor kampung. Mereka dapat menyimpan, mengatur, dan mengelola surat-surat, keputusan kampung, laporan-laporan, data penduduk, dan dokumen-dokumen lain yang diperlukan untuk kelancaran administrasi kampung.</li>
+        <li><strong>Perekaman Data:</strong> StaffJuru Tulis kampung mencatat dan memperbarui data kependudukan serta melakukan pencatatan dan perekaman terkait kegiatan dan peristiwa di kampung. Mereka dapat melakukan tugas seperti pencatatan kelahiran, kematian, perpindahan penduduk, dan kejadian penting lainnya di kampung.</li>
+        <li><strong>Koordinasi Kegiatan:</strong> Staff Juru Tulis kampung dapat berperan dalam koordinasi kegiatan dan acara di kampung. Mereka dapat membantu mengorganisir rapat-rapat kampung, mengatur jadwal kegiatan, menyusun agenda, dan memastikan kelancaran pelaksanaan kegiatan atau acara yang diselenggarakan oleh kampung.</li>
+        <li><strong>Pendukung Kepala Kampung:</strong> Staff Juru Tulis kampung mendukung kepala kampung dalam menjalankan tugas-tugasnya. Mereka dapat membantu kepala kampung dalam menyusun keputusan kampung, mengorganisir pertemuan, menyusun laporan-laporan, serta memberikan masukan atau saran dalam pengambilan keputusan di tingkat kampung.</li>
+      </ol>
+      <p>Staff Juru Tulis kampung sangat penting dalam menjaga kelancaran administrasi dan pelayanan publik di tingkat kampung atau desa. Dengan melakukan tugas-tugas administratif, menyediakan pelayanan kepada masyarakat, dan mendukung kepala kampung, mereka berkontribusi dalam menjaga keteraturan dan efisiensi kantor kampung serta meningkatkan pelayanan kepada masyarakat.
+      </p>
+      </div>
+  </div>
+
+  <div id="staff4" class="konten-item fade-in">
+    <img src="assets/no-img.png" alt="S">
+    <h2>Staff Juru Tulis IV</h2>
+    <table class="data-pejabat fade-in">
+      <tr>
+        <td><strong>Jabatan</strong></td>
+        <td>: STAFF Juru Tulis IV</td>
+      </tr>
+      <tr>
+        <td><strong>Nama Pejabat</strong></td>
+        <td>: KARIMANSYAH PUTRA, ST</td>
+      </tr>
+      <tr>
+        <td><strong>Nama Lengkap</strong></td>
+        <td>: KARIMANSYAH PUTRA, ST</td>
+      </tr>
+      <tr>
+        <td><strong>Tempat/Tgl Lahir</strong></td>
+        <td>: Minas, 10 Agustus 1994</td>
+      </tr>
+      <tr>
+        <td><strong>Alamat</strong></td>
+        <td>: - </td>
+      </tr>
+      <tr>
+        <td><strong>Tingkat Pendidikan</strong></td>
+        <td>: S1</td>
+      </tr>
+    </table>
+
+    <br>
+
+    <div class="deskripsi-pejabat fade-in">
+      <p>
+        Staff Juru Tulis kampung adalah individu yang bertanggung jawab dalam menjalankan tugas administratif di tingkat kampung atau desa. Mereka bekerja di kantor kampung atau pusat pemerintahan setempat dan mendukung kelancaran administrasi serta pelayanan publik kepada masyarakat.
+      </p>
+      <p><strong>Berikut adalah beberapa tugas umum yang dapat dilakukan oleh Staff Juru Tulis kampung:</strong></p>
+      <ol>
+        <li><strong>Penerimaan dan Pelayanan Publik:</strong> Staff Juru Tulis kampung menerima dan memberikan pelayanan kepada masyarakat yang datang ke kantor kampung. Mereka dapat membantu dalam memberikan informasi, menerima permintaan, pengaduan, atau pertanyaan masyarakat terkait kegiatan kampung atau kebutuhan pelayanan dasar seperti surat keterangan, pengurusan izin, atau informasi tentang program dan kegiatan kampung.</li>
+        <li><strong>Administrasi Dokumen:</strong> Staff Juru Tulis kampung bertanggung jawab dalam mengelola dan menjaga keberlanjutan dokumen-dokumen administratif di kantor kampung. Mereka dapat menyimpan, mengatur, dan mengelola surat-surat, keputusan kampung, laporan-laporan, data penduduk, dan dokumen-dokumen lain yang diperlukan untuk kelancaran administrasi kampung.</li>
+        <li><strong>Perekaman Data:</strong> StaffJuru Tulis kampung mencatat dan memperbarui data kependudukan serta melakukan pencatatan dan perekaman terkait kegiatan dan peristiwa di kampung. Mereka dapat melakukan tugas seperti pencatatan kelahiran, kematian, perpindahan penduduk, dan kejadian penting lainnya di kampung.</li>
+        <li><strong>Koordinasi Kegiatan:</strong> Staff Juru Tulis kampung dapat berperan dalam koordinasi kegiatan dan acara di kampung. Mereka dapat membantu mengorganisir rapat-rapat kampung, mengatur jadwal kegiatan, menyusun agenda, dan memastikan kelancaran pelaksanaan kegiatan atau acara yang diselenggarakan oleh kampung.</li>
+        <li><strong>Pendukung Kepala Kampung:</strong> Staff Juru Tulis kampung mendukung kepala kampung dalam menjalankan tugas-tugasnya. Mereka dapat membantu kepala kampung dalam menyusun keputusan kampung, mengorganisir pertemuan, menyusun laporan-laporan, serta memberikan masukan atau saran dalam pengambilan keputusan di tingkat kampung.</li>
+      </ol>
+      <p>Staff Juru Tulis kampung sangat penting dalam menjaga kelancaran administrasi dan pelayanan publik di tingkat kampung atau desa. Dengan melakukan tugas-tugas administratif, menyediakan pelayanan kepada masyarakat, dan mendukung kepala kampung, mereka berkontribusi dalam menjaga keteraturan dan efisiensi kantor kampung serta meningkatkan pelayanan kepada masyarakat.
+      </p>
+      </div>
+  </div>
+
+  <div id="penjaga_kantor1" class="konten-item fade-in">
+    <img src="assets/no-img.png" alt="penjaga_kantor1">
+    <h2>PENJAGA KANTOR KAMPUNG I</h2>
+    <table class="data-pejabat fade-in">
+      <tr>
+        <td><strong>Jabatan</strong></td>
+        <td>: PENJAGA KANTOR KAMPUNG I</td>
+      </tr>
+      <tr>
+        <td><strong>Nama Pejabat</strong></td>
+        <td>: KHAIRIN</td>
+      </tr>
+      <tr>
+        <td><strong>Nama Lengkap</strong></td>
+        <td>: KHAIRIN</td>
+      </tr>
+      <tr>
+        <td><strong>Tempat/Tgl Lahir</strong></td>
+        <td>: Medan, 10 September 1964</td>
+      </tr>
+      <tr>
+        <td><strong>Alamat</strong></td>
+        <td>: Jl. Cempedak RT003 RK004 Rantau Bertuah</td>
+      </tr>
+      <tr>
+        <td><strong>Tingkat Pendidikan</strong></td>
+        <td>: SD</td>
+      </tr>
+    </table>
+  </div>
+
+  <div id="penjaga_kantor2" class="konten-item fade-in">
+    <img src="assets/no-img.png" alt="penjaga_kantor1">
+    <h2>PENJAGA KANTOR KAMPUNG II</h2>
+    <table class="data-pejabat fade-in">
+      <tr>
+        <td><strong>Jabatan</strong></td>
+        <td>: PENJAGA KANTOR KAMPUNG II</td>
+      </tr>
+      <tr>
+        <td><strong>Nama Pejabat</strong></td>
+        <td>: MARIADI</td>
+      </tr>
+      <tr>
+        <td><strong>Nama Lengkap</strong></td>
+        <td>: MARIADI</td>
+      </tr>
+      <tr>
+        <td><strong>Tempat/Tgl Lahir</strong></td>
+        <td>: Beringin, 07 April 1975</td>
+      </tr>
+      <tr>
+        <td><strong>Alamat</strong></td>
+        <td>: Jl. Sukun RT003 RK002 Rantau Bertuah</td>
+      </tr>
+      <tr>
+        <td><strong>Tingkat Pendidikan</strong></td>
+        <td>: SD</td>
+      </tr>
+    </table>
+  </div>
+
+  <div id="kebersihan1" class="konten-item fade-in">
+    <img src="assets/no-img.png" alt="kebersihan">
+    <h2>PETUGAS KEBERSIHAN I</h2>
+    <table class="data-pejabat fade-in">
+      <tr>
+        <td><strong>Jabatan</strong></td>
+        <td>: PETUGAS KEBERSIHAN I</td>
+      </tr>
+      <tr>
+        <td><strong>Nama Pejabat</strong></td>
+        <td>: SUKIATIK</td>
+      </tr>
+      <tr>
+        <td><strong>Nama Lengkap</strong></td>
+        <td>: SUKIATIK</td>
+      </tr>
+      <tr>
+        <td><strong>Tempat/Tgl Lahir</strong></td>
+        <td>: Sumber Dadi, 24 April 1980</td>
+      </tr>
+      <tr>
+        <td><strong>Alamat</strong></td>
+        <td>: Jl. Sukun RT001 RK003 Rantau Bertuah</td>
+      </tr>
+      <tr>
+        <td><strong>Tingkat Pendidikan</strong></td>
+        <td>: SD</td>
+      </tr>
+    </table>
+  </div>
+
+  <div id="kebersihan2" class="konten-item fade-in">
+    <img src="assets/no-img.png" alt="kebersihan">
+    <h2>PETUGAS KEBERSIHAN II</h2>
+    <table class="data-pejabat fade-in">
+      <tr>
+        <td><strong>Jabatan</strong></td>
+        <td>: PETUGAS KEBERSIHAN II</td>
+      </tr>
+      <tr>
+        <td><strong>Nama Pejabat</strong></td>
+        <td>: IRNA NOVITA SARI</td>
+      </tr>
+      <tr>
+        <td><strong>Nama Lengkap</strong></td>
+        <td>: IRNA NOVITA SARI</td>
+      </tr>
+      <tr>
+        <td><strong>Tempat/Tgl Lahir</strong></td>
+        <td>: Minas, 09 Februari 1989</td>
+      </tr>
+      <tr>
+        <td><strong>Alamat</strong></td>
+        <td>: Jl. RT002 RK002 Rantau Bertuah</td>
+      </tr>
+      <tr>
+        <td><strong>Tingkat Pendidikan</strong></td>
+        <td>: SMP</td>
+      </tr>
+    </table>
+  </div>
+
+  <div id="perpus1" class="konten-item fade-in">
+    <img src="assets/no-img.png" alt="kebersihan">
+    <h2>PENJAGA PERPUSTAKAAN KAMPUNG I</h2>
+    <table class="data-pejabat fade-in">
+      <tr>
+        <td><strong>Jabatan</strong></td>
+        <td>: PENJAGA PERPUSTAKAAN KAMPUNG I</td>
+      </tr>
+      <tr>
+        <td><strong>Nama Pejabat</strong></td>
+        <td>: SRI MULIYATII</td>
+      </tr>
+      <tr>
+        <td><strong>Nama Lengkap</strong></td>
+        <td>: SRI MULIYATI</td>
+      </tr>
+      <tr>
+        <td><strong>Tempat/Tgl Lahir</strong></td>
+        <td>: Medan, 15 September 1995</td>
+      </tr>
+      <tr>
+        <td><strong>Alamat</strong></td>
+        <td>:  Jl. Sukun RT001 RK003 Rantau Bertuah</td>
+      </tr>
+      <tr>
+        <td><strong>Tingkat Pendidikan</strong></td>
+        <td>: SMK</td>
+      </tr>
+    </table>
+  </div>
+
+  <div id="perpus2" class="konten-item fade-in">
+    <img src="assets/no-img.png" alt="kebersihan">
+    <h2>PENJAGA PERPUSTAKAAN KAMPUNG II</h2>
+    <table class="data-pejabat fade-in">
+      <tr>
+        <td><strong>Jabatan</strong></td>
+        <td>: PENJAGA PERPUSTAKAAN KAMPUNG II</td>
+      </tr>
+      <tr>
+        <td><strong>Nama Pejabat</strong></td>
+        <td>: JULI EKA SYAFITRI</td>
+      </tr>
+      <tr>
+        <td><strong>Nama Lengkap</strong></td>
+        <td>: JULI EKA SYAFITRI</td>
+      </tr>
+      <tr>
+        <td><strong>Tempat/Tgl Lahir</strong></td>
+        <td>: Kisaran, 10 Juli 1987</td>
+      </tr>
+      <tr>
+        <td><strong>Alamat</strong></td>
+        <td>:  Jl. Saos RT002 RK001 Rantau Bertuah</td>
+      </tr>
+      <tr>
+        <td><strong>Tingkat Pendidikan</strong></td>
+        <td>: SMP</td>
+      </tr>
+    </table>
+  </div>
+
+
+</div>  
+  <section id="kontak" class="kontak-kami">
+    <div class="kontak-container">
+      <div class="kontak-kolom">
+        <h2 class="dummy-heading">Kantor Kami</h2>
+        <p>
+          Kantor Pemerintahan Kampung Rantau Bertuah<br>
+          Kecamatan Minas, Kabupaten Siak, Provinsi Riau.<br><br>
+          Kode Pos 28685
+        </p>
+      </div>
+      <div class="kontak-kolom">
+        <h2 class="dummy-heading">Kontak Kami</h2>
+        <p><i class="fas fa-envelope"></i> rantaubertuah0@gmail.com</p>
+        <p><i class="fab fa-facebook-f"></i> Pemerintah Kampung Rantau Bertuah</p>
+      </div>
+    </div>
+  </section>
+</main>
+  <footer>
+    &copy; 2025 Desa Rantau Bertuah. By KKN Mas Kelompok 120.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

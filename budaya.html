@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Budaya Desa</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="website icon" type="png" href="assets/icon/icon.png">
+</head>
+  <header>    <div class="header-inner">
+      <img src="assets/icon/icon.png" alt="Logo Desa" class="logo-desa">
+      <div class="header-text">
+        <div id="tanggal-waktu" class="tanggal-waktu"></div>
+        <h1 id="desarantaubertuah">Desa Rantau Bertuah</h1>
+        <p>Kecamatan Minas, Kabupaten Siak, Provinsi Riau</p>
+      </div>
+    </div>
+  </header>
+<body>
+<main>
+    <nav class="fade-in">
+    <a href="struktur.html" class="button-nav">Struktur Desa</a>
+    <div class="nav-item-wrapper">
+      <a href="#" class="button-nav with-arrow">Pariwisata Desa <span class="dropdown-arrow">▼</span></a>
+      <ul class="dropdown-custom">
+        <li><a href="wisata.html" class="active">Wisata</a></li>
+      </ul>
+    </div>
+    <div class="nav-item-wrapper">
+          <a href="#" class="button-nav with-arrow">Profil Desa <span class="dropdown-arrow">▼</a>
+          <ul class="dropdown-custom">
+            <li><a href="index.html#profil" class="button-nav">Profil</a></li>
+            <li><a href="index.html#visi&misi" class="button-nav">Visi & Misi</a></li>
+            <li><a href="index.html#geografi" class="button-nav">Geografis</a></li>
+            <li><a href="profil.html" class="button-nav-selengkapnya">Tentang Kami</a></li>
+          </ul>
+        </div>
+      <a href="index.html#kontak" class="button-nav">Kontak</a>
+      <div class="nav-item-wrapper">
+        <a href="#" class="button-nav with-arrow">Informasi Desa <span class="dropdown-arrow">▼</a>
+        <ul class="dropdown-custom">
+          <li><a href="apbdesa.html" class="active">APB Desa</a></li>
+        </ul>
+      </div>
+      <a href="galeri.html" class="button-nav">Galeri</a>
+    </nav>
+    
+    <section class="breadcrumb">
+        <a href="index.html"><i class="fa fa-home"></i></a> / Budaya
+    </section>
+
+
+    <section class="budaya-list-section">
+    <h2 class="judul-utama-budaya">Daftar Budaya Desa Rantau Bertuah</h2>
+      <div class="budaya-grid">
+        <div class="budaya-card" onclick="toggleBudaya(1)">
+        <img src="assets/budaya/kuda-lumping.jpg" alt="Kuda Lumping">
+          <div class="budaya-card-text">
+          <h3 class="judul-with-arrow">
+            Kuda Lumping<span class="dropdown-arrow">▼</span>
+          </h3>
+          <p class="p-judul"><strong>Hiburan Daerah</strong></p>
+            <div class="budaya-desc" id="budaya-1">
+              <p>Sejak era transmigrasi, masyarakat Jawa banyak bermukim di wilayah Siak, termasuk Rantau Bertuah. Mereka membawa serta Tari Kuda Lumping—juga dikenal sebagai Jaran Kepang atau Kuda Kepang—sebagai bagian dari identitas budaya mereka 
+                Tari ini menampilkan penari yang menunggang kuda tiruan dari anyaman bambu atau rotan, dihias dengan kain dan cat warna-warni untuk memberi kesan visual menarik. Penarinya bergerak dinamis mengikuti irama gamelan, kendang, gong, atau suling untuk menciptakan suasana tarian yang berenergi dan penuh semangat 
+                Yang menjadikan pertunjukan ini sangat unik adalah unsur magis dan trance. Dalam beberapa momen, penari bisa tampak seperti kerasukan: berjalan di atas pecahan kaca, tahan panas atau cambukan, bahkan makan bunga atau singkong sebagai bagian dari ritual pertunjukan 
+                . Di Siak sendiri, seperti di Desa Kemuning Muda, unsur spiritual ini makin diperkuat melalui persembahan sesajen—seperti ketupat, pisang raja, telur, hingga bunga—sebagai simbol permohonan berkah dan pelindung pertunjukan 
+                Tari Kuda Lumping di Rantau Bertuah berfungsi tidak hanya sebagai hiburan, tetapi juga sebagai media spiritual dan pelestarian budaya. Pertunjukan ini sering dipentaskan dalam acara adat, perayaan desa, maupun upacara komunitas —mewakili kombinasi estetika, spiritualitas, dan identitas sejarah penduduk transmigran Jawa di Riau
+              </p>
+              <p>
+              Sumber gambar: 
+              <a href="https://www.kabarpekanbaru.com/budaya/pertunjukan-tari-kuda-lumping-warisan-budaya-terjaga/">
+                www.kabarpekanbaru.com
+              </a>
+              <br>
+              <p>
+              Sumber deskripsi: 
+              <a href="https://www.riaumagz.com/2013/05/kuda-lumping-kuantan-singingi.html?utm_source=chatgpt.com">
+                www.riaumagz.com
+              </a>
+              <a href="https://www.riaumagz.com/2013/05/kuda-lumping-kuantan-singingi.html?utm_source=chatgpt.com">
+                prokopim.bengkaliskab.go.id
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="budaya-card" onclick="toggleBudaya(2)">
+        <img src="assets/budaya/tari-alongalong.jpg" alt="Tari Olang Olang">
+        <div class="budaya-card-text">
+          <h3 class="judul-with-arrow">
+            Tari Olang-Olang <span class="dropdown-arrow">▼</span>
+          </h3>
+          <p class="p-judul"><strong>Tari Tradisional Khas Suku Sakai</strong></p>
+          <div class="budaya-desc" id="budaya-2">
+              <p>Tari Olang-Olang adalah tarian tradisional khas Suku Sakai yang berasal dari Kecamatan Minas,
+                Kabupaten Siak, Riau. Nama “Olang-Olang” berasal dari bahasa Sakai yang berarti elang. Tarian 
+                ini terinspirasi dari kisah legenda tentang seorang pemuda yang jatuh cinta pada Putri Kayangan.
+                Karena melanggar pantangan, sang putri berubah menjadi seekor elang dan terbang meninggalkannya. 
+                Gerakan tarian yang dibawakan meniru kelincahan dan kegagahan elang di udara, sehingga penarinya
+                biasanya adalah laki-laki dengan gerakan yang tegas dan penuh energi. Selain menjadi pertunjukan seni,
+                Tari Olang-Olang memiliki fungsi spiritual yang erat kaitannya dengan ritual pengobatan adat masyarakat Sakai.
+                Dalam upacara ini, seorang dukun atau “bomo” menari sambil memasuki keadaan trance untuk berkomunikasi dengan roh leluhur yang disebut “Soli”. 
+                Melalui tarian tersebut, dipercaya bahwa roh jahat dapat diusir dan penyakit, baik jasmani maupun rohani, dapat disembuhkan. Keunikan Tari Olang-Olang terletak pada perpaduan nilai estetika,
+                kearifan lokal, dan fungsi spiritualnya, sehingga menjadi warisan budaya yang tak hanya memperkaya seni pertunjukan Riau, tetapi juga menjaga hubungan harmonis masyarakat Sakai dengan adat dan alam sekitar.</p>
+              <p>
+              Sumber gambar: 
+              <a href="https://prokopim.bengkaliskab.go.id/web/detailberita/14111/berlangsung-meriah,-tarian-budaya-di-negeri-junjungan-meriahkan-festival-julang-bermasa-tingkat-kabupaten-tahun-2022" target="_blank">
+                prokopim.bengkaliskab.go.id
+              </a>
+            </p>
+            </div>
+          </div>
+          </div>
+
+          <div class="budaya-card" onclick="toggleBudaya(3)">
+          <img src="assets/budaya/silat.jpg" alt="Silat">
+          <div class="budaya-card-text">
+            <h3 class="judul-with-arrow">
+              Silat <span class="dropdown-arrow">▼</span>
+            </h3>
+            <p class="p-judul"><strong>Jenis Bela Diri khas Daerah</strong></p>
+            <div class="budaya-desc" id="budaya-3">
+                <p>
+                  Silat adalah seni bela diri tradisional asal Melayu yang tersebar di Asia Tenggara. Dikenal dengan berbagai aliran dan gaya, 
+                  silat melibatkan teknik cepat dan lincah serta mengandung nilai etika dan spiritual. Selain sebagai pertahanan diri, silat 
+                  juga berfungsi sebagai pendidikan karakter dan sering dipertunjukkan dalam acara budaya. Saat ini, silat semakin populer 
+                  secara internasional dan terus beradaptasi untuk menarik minat generasi muda.
+                </p>
+              </div>
+            </div>
+            </div>
+            
+            <div class="budaya-card" onclick="toggleBudaya(4)">
+            <img src="assets/budaya/kompang.jpg" alt="Kompang">
+            <div class="budaya-card-text">
+              <h3 class="judul-with-arrow">
+                Alat Kompang <span class="dropdown-arrow">▼</span>
+              </h3>
+              <p class="p-judul"><strong>Musik Tradisional</strong></p>
+              <div class="budaya-desc" id="budaya-4">
+                  <p>Kompang adalah alat musik tradisional Melayu yang dipengaruhi oleh budaya Arab. Digunakan dalam upacara agama dan pertunjukan seni, kompang terbuat dari kayu dan kulit 
+                    binatang, dan dimainkan dengan memukul permukaannya. Dalam beberapa tahun terakhir, kompang telah dimodernisasi dan semakin populer di kalangan generasi muda, menjadi
+                    simbol warisan budaya yang kaya.</p>
+                </div>
+              </div>
+          </div>
+    </div>
+    </section>
+
+    <section id="kontak" class="kontak-kami">
+      <div class="kontak-container">
+        <div class="kontak-kolom">
+          <h2 class="dummy-heading">Kantor Kami</h2>
+          <p>
+            Kantor Pemerintahan Kampung Rantau Bertuah<br>
+            Kecamatan Minas, Kabupaten Siak, Provinsi Riau.<br><br>
+            Kode Pos 28685
+          </p>
+        </div>
+        <div class="kontak-kolom">
+          <h2 class="dummy-heading">Kontak Kami</h2>
+          <p><i class="fas fa-envelope"></i> rantaubertuah0@gmail.com</p>
+          <p><i class="fab fa-facebook-f"></i> Pemerintah Kampung Rantau Bertuah</p>
+        </div>
+      </div>
+    </section>
+
+</main>
+  <footer>
+    &copy; 2025 Desa Rantau Bertuah. By KKN Mas Kelompok 120.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
